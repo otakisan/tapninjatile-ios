@@ -27,6 +27,8 @@ class GamePlayViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.initAnalysisTracker("ゲームプレイ")
+        
         self.scene?.isAppear = true
     }
 

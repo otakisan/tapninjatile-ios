@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="1355" y="860"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Menu View Controller-->
         <scene sceneID="srx-qz-AmN">
             <objects>
-                <viewController id="NTN-7V-Par" sceneMemberID="viewController">
+                <viewController id="NTN-7V-Par" customClass="GameMenuViewController" customModule="TapNinjaTile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wc1-G8-lQb"/>
                         <viewControllerLayoutGuide type="bottom" id="fOl-f8-zK9"/>

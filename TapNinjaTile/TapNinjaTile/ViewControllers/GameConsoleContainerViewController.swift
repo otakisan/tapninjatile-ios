@@ -20,7 +20,7 @@ class GameConsoleContainerViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation
@@ -31,7 +31,11 @@ class GameConsoleContainerViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
     @IBAction func unwindToContainer(segue: UIStoryboardSegue) {
+        if let parent = self.presentingViewController as? GameMenuViewController {
+            parent.isShowAd = true
+        }
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
