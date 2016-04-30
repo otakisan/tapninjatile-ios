@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Play Game"; ObjectID = "Tjm-Da-Clx"; */
+"Tjm-Da-Clx.normalTitle" = "ゲーム開始";
+
+/* Class = "UILabel"; text = "Tap Ninja Tile"; ObjectID = "qRk-lX-BYE"; */
+"qRk-lX-BYE.text" = "スピードタップ";
+
+/* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "uKv-pB-Ad7"; */
+"uKv-pB-Ad7.normalTitle" = "戻る";

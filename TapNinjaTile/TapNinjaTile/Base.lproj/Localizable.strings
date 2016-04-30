@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  TapNinjaTile
+
+  Created by takashi on 2016/04/30.
+  Copyright © 2016年 Takashi Ikeda. All rights reserved.
+*/
+
+"Start" = "Start";
+"Score" = "Score";
+"sec." = "sec.";
+"Remaining Time" = "Remaining Time";
+"Pt." = "Pt.";
+"Try Again !" = "Try Again !";
+"You are Awesome !!!" = "You are Awesome !!!";
+"Good job !" = "Good job !";

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16366BBC1CD4A48900BC2116 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16366BBB1CD4A48900BC2116 /* StringExtensions.swift */; };
+		16366BC01CD4A67B00BC2116 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16366BC21CD4A67B00BC2116 /* InfoPlist.strings */; };
+		16366BC71CD4A7C000BC2116 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16366BC91CD4A7C000BC2116 /* Localizable.strings */; };
 		16CEC6FB1CD429F7002FE5CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CEC6FA1CD429F7002FE5CD /* AppDelegate.swift */; };
 		16CEC7041CD429F7002FE5CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CEC7021CD429F7002FE5CD /* Main.storyboard */; };
 		16CEC7061CD429F7002FE5CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CEC7051CD429F7002FE5CD /* Assets.xcassets */; };
@@ -43,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16366BBB1CD4A48900BC2116 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		16366BBD1CD4A51A00BC2116 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		16366BC31CD4A68C00BC2116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		16366BC41CD4A69700BC2116 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		16366BC81CD4A7C000BC2116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		16366BCA1CD4A7C200BC2116 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		16CEC6F71CD429F7002FE5CD /* TapNinjaTile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapNinjaTile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CEC6FA1CD429F7002FE5CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16CEC7031CD429F7002FE5CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16366BBA1CD4A43800BC2116 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				16366BBB1CD4A48900BC2116 /* StringExtensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		16CEC6EE1CD429F6002FE5CD = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +132,7 @@
 		16CEC6F91CD429F7002FE5CD /* TapNinjaTile */ = {
 			isa = PBXGroup;
 			children = (
+				16366BBA1CD4A43800BC2116 /* Utilities */,
 				16CEC73B1CD4439D002FE5CD /* Entities */,
 				16CEC73A1CD442DC002FE5CD /* Components */,
 				16CEC7331CD43BB9002FE5CD /* ViewControllers */,
@@ -124,6 +142,8 @@
 				16CEC7051CD429F7002FE5CD /* Assets.xcassets */,
 				16CEC7071CD429F7002FE5CD /* LaunchScreen.storyboard */,
 				16CEC70A1CD429F7002FE5CD /* Info.plist */,
+				16366BC21CD4A67B00BC2116 /* InfoPlist.strings */,
+				16366BC91CD4A7C000BC2116 /* Localizable.strings */,
 			);
 			path = TapNinjaTile;
 			sourceTree = "<group>";
@@ -271,6 +291,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 16CEC6EE1CD429F6002FE5CD;
 			productRefGroup = 16CEC6F81CD429F7002FE5CD /* Products */;
@@ -290,7 +311,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				16CEC7091CD429F7002FE5CD /* LaunchScreen.storyboard in Resources */,
+				16366BC01CD4A67B00BC2116 /* InfoPlist.strings in Resources */,
 				16CEC7061CD429F7002FE5CD /* Assets.xcassets in Resources */,
+				16366BC71CD4A7C000BC2116 /* Localizable.strings in Resources */,
 				16CEC72E1CD43251002FE5CD /* TileScene.sks in Resources */,
 				16CEC7431CD46804002FE5CD /* GameOverScene.sks in Resources */,
 				16CEC7041CD429F7002FE5CD /* Main.storyboard in Resources */,
@@ -320,6 +343,7 @@
 			files = (
 				16CEC7451CD46953002FE5CD /* GameOverScene.swift in Sources */,
 				16CEC7391CD43F86002FE5CD /* GameConsoleContainerViewController.swift in Sources */,
+				16366BBC1CD4A48900BC2116 /* StringExtensions.swift in Sources */,
 				16CEC7351CD43D6F002FE5CD /* GameConsoleViewController.swift in Sources */,
 				16CEC7371CD43E9B002FE5CD /* GamePlayViewController.swift in Sources */,
 				16CEC73F1CD44542002FE5CD /* TileNodeState.swift in Sources */,
@@ -362,10 +386,29 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		16366BC21CD4A67B00BC2116 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16366BC31CD4A68C00BC2116 /* Base */,
+				16366BC41CD4A69700BC2116 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		16366BC91CD4A7C000BC2116 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16366BC81CD4A7C000BC2116 /* Base */,
+				16366BCA1CD4A7C200BC2116 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		16CEC7021CD429F7002FE5CD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				16CEC7031CD429F7002FE5CD /* Base */,
+				16366BBD1CD4A51A00BC2116 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -555,6 +598,7 @@
 				16CEC7251CD429F7002FE5CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16CEC7261CD429F7002FE5CD /* Build configuration list for PBXNativeTarget "TapNinjaTileTests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +607,7 @@
 				16CEC7281CD429F7002FE5CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16CEC7291CD429F7002FE5CD /* Build configuration list for PBXNativeTarget "TapNinjaTileUITests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +616,7 @@
 				16CEC72B1CD429F7002FE5CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

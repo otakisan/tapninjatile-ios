@@ -29,17 +29,17 @@ class GameOverScene: SKScene {
     }
     
     private func initialize() {
-        self.scoreLabel?.text = "Score : \(self.gamePlayer?.currentGameScore ?? 0)"
+        self.scoreLabel?.text = "\("Score".localized()) : \(self.gamePlayer?.currentGameScore ?? 0)"
         self.gradeLabel?.text = self.gradeText()
     }
     
     private func gradeText() -> String {
-        var gradeText = "Try Again !"
+        var gradeText = "Try Again !".localized()
         
         if self.gamePlayer?.currentGameScore > 50 {
-            gradeText = "You are Awesome !!!"
+            gradeText = "You are Awesome !!!".localized()
         } else if self.gamePlayer?.currentGameScore > 10 {
-            gradeText = "Good job !"
+            gradeText = "Good job !".localized()
         }
         
         return gradeText

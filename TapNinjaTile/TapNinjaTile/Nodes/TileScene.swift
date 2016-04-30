@@ -22,6 +22,8 @@ class TileScene: SKScene {
         self.userInteractionEnabled = true
         
         self.updateScoreLabel()
+        self.updateRemainingTimeLabel(0.0)
+        self.startLabelNode?.text = "Start".localized()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -55,7 +57,7 @@ class TileScene: SKScene {
             }
             
             let remainingTime = self.gameLimitTime - (currentTime - self.launchTime)
-            self.remainingTimeLabelNode?.text = "\(Int(ceil(remainingTime))) sec. remaining"
+            self.updateRemainingTimeLabel(remainingTime)
             
             if remainingTime > 0.0 {
                 self.children.flatMap{$0 as? TileNode}.forEach{$0.stateMachine.updateWithDeltaTime(currentTime)}
@@ -76,7 +78,11 @@ class TileScene: SKScene {
     }
     
     private func updateScoreLabel() {
-        self.scoreLabel?.text = "\(self.gamePlayer?.currentGameScore ?? 0) pt."
+        self.scoreLabel?.text = "\(self.gamePlayer?.currentGameScore ?? 0) \("Pt.".localized())"
+    }
+    
+    private func updateRemainingTimeLabel(remainingTime : Double) {
+        self.remainingTimeLabelNode?.text = "\("Remaining Time".localized()) (\("sec.".localized())) : \(Int(ceil(remainingTime)))"
     }
     
     var scoreLabel : SKLabelNode? {
