@@ -121,6 +121,10 @@
         <scene sceneID="dbk-L8-RHP">
             <objects>
                 <viewController id="PUb-qi-tiG" customClass="GameConsoleViewController" customModule="TapNinjaTile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5oU-IQ-ATw"/>
+                        <viewControllerLayoutGuide type="bottom" id="t9C-mC-np9"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3Ka-xF-1RT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,7 +140,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uKv-pB-Ad7" firstAttribute="centerY" secondItem="3Ka-xF-1RT" secondAttribute="centerY" id="cFu-Qw-RkJ"/>
                             <constraint firstItem="uKv-pB-Ad7" firstAttribute="centerX" secondItem="3Ka-xF-1RT" secondAttribute="centerX" id="oN7-9r-nC7"/>
