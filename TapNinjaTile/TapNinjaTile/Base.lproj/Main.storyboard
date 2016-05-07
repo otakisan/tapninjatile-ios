@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NTN-7V-Par">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NTN-7V-Par">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
@@ -130,11 +129,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKv-pB-Ad7">
-                                <rect key="frame" x="230" y="35" width="140" height="30"/>
+                                <rect key="frame" x="195" y="34" width="210" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="vHE-VZ-t97"/>
+                                    <constraint firstAttribute="width" constant="210" id="IQW-Xe-nn8"/>
                                 </constraints>
-                                <state key="normal" title="Exit"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back to main menu"/>
                                 <connections>
                                     <segue destination="LbF-zc-OwD" kind="unwind" unwindAction="unwindToContainer:" id="HLQ-xU-tm2"/>
                                 </connections>
@@ -142,8 +142,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uKv-pB-Ad7" firstAttribute="centerY" secondItem="3Ka-xF-1RT" secondAttribute="centerY" id="cFu-Qw-RkJ"/>
-                            <constraint firstItem="uKv-pB-Ad7" firstAttribute="centerX" secondItem="3Ka-xF-1RT" secondAttribute="centerX" id="oN7-9r-nC7"/>
+                            <constraint firstItem="uKv-pB-Ad7" firstAttribute="top" secondItem="5oU-IQ-ATw" secondAttribute="bottom" constant="34" id="EgJ-ZV-CMR"/>
+                            <constraint firstItem="uKv-pB-Ad7" firstAttribute="centerY" secondItem="3Ka-xF-1RT" secondAttribute="centerY" id="HQS-av-GtB"/>
+                            <constraint firstItem="uKv-pB-Ad7" firstAttribute="centerX" secondItem="3Ka-xF-1RT" secondAttribute="centerX" id="MTv-fi-2VH"/>
                         </constraints>
                     </view>
                 </viewController>

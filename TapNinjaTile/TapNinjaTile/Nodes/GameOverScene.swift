@@ -34,12 +34,16 @@ class GameOverScene: SKScene {
     }
     
     private func gradeText() -> String {
-        var gradeText = "Try Again !".localized()
+        var gradeText = "eval_try_again".localized()
         
-        if self.gamePlayer?.currentGameScore > 50 {
-            gradeText = "You are Awesome !!!".localized()
-        } else if self.gamePlayer?.currentGameScore > 10 {
-            gradeText = "Good job !".localized()
+        if self.gamePlayer?.currentGameScore >= 80 {
+            gradeText = "eval_incredible".localized()
+        } else if self.gamePlayer?.currentGameScore >= 50 {
+            gradeText = "eval_amazing".localized()
+        } else if self.gamePlayer?.currentGameScore >= 30 {
+            gradeText = "eval_great".localized()
+        } else if self.gamePlayer?.currentGameScore >= 10 {
+            gradeText = "eval_nice".localized()
         }
         
         return gradeText

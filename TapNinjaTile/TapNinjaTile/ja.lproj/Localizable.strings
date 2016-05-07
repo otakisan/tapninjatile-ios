@@ -11,6 +11,10 @@
 "sec." = "秒";
 "Remaining Time" = "残り時間";
 "Pt." = "ポイント";
-"Try Again !" = "どんまい！";
-"You are Awesome !!!" = "スゴイですね !!!";
-"Good job !" = "グッジョブ！";
+
+// 評価コメント
+"eval_try_again" = "どんまい！";
+"eval_incredible" = "信じられない... 完璧です！";
+"eval_amazing" = "スゴイですね !!!";
+"eval_great" = "センスありますね！";
+"eval_nice" = "グッジョブ！";

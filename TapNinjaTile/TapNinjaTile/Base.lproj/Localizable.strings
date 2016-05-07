@@ -10,7 +10,11 @@
 "Score" = "Score";
 "sec." = "sec.";
 "Remaining Time" = "Remaining Time";
-"Pt." = "Pt.";
-"Try Again !" = "Try Again !";
-"You are Awesome !!!" = "You are Awesome !!!";
-"Good job !" = "Good job !";
+"Pt." = "Points.";
+
+// Evaluation
+"eval_try_again" = "Try Again !";
+"eval_incredible" = "Incredible !!!!";
+"eval_amazing" = "Wow, That's amazing !!";
+"eval_great" = "Great !";
+"eval_nice" = "Good job !";
